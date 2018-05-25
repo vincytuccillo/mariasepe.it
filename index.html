@@ -13,7 +13,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/png" href="images/msfavicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="https://www.mariasepe.it/images/msfavicon.png"/>
+
+
+		<script src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-43981329-1']);
@@ -27,60 +33,66 @@
 		s.parentNode.insertBefore(ga, s);
 		})();
 		</script>
-		
-		
-		
-		
+
+
+
+
 		<!-- Open graph -->
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://www.mariasepe.it/">
+		<meta property="og:url" content="https://www.mariasepe.it/">
 		<meta property="og:title" content="Maria Carmina SEPE">
-		<meta property="og:image" content="http://www.mariasepe.it/images/background_SEPE_FdI_2.jpg">
+		<meta property="og:image" content="https://www.mariasepe.it/images/background_SEPE_FdI_2.jpg">
 		<meta property="og:description" content="Il sito politico di Maria Carmina Sepe">
 		<meta property="og:locale" content="it_IT">
+		<meta property="fb:app_id" content="2018014255184485"/>
+
+		<!-- gallery -->
+		<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/lick/slick-theme.css"/>
+
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Maria Sepe</h1>
+				<h1>SEPE Maria Carmina</h1>
 				<nav>
 					<ul>
+
 						<li><a href="#intro">Home</a></li>
 						<li><a href="#one">Chi sono</a></li>
 						<li><a href="#two">Politica</a></li>
-						<!--
-							
-						<li><a href="#work">My Work</a></li>
-						-->						
+						<li><a href="#casa">Casa Afragola</a></li>
+						<li><a href="#news">Avvisi</a></li>
 						<li><a href="#contact">Unisciti a noi</a></li>
 					</ul>
 				</nav>
 			</header>
 
 		<!-- Intro -->
-			<section id="intro" class="main style1 dark fullscreen">				
+			<section id="intro" class="main style1 dark fullscreen">
 			</section>
-			
-		
+
+
+
+
 		<!-- One -->
 			<section id="one" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
 						<h2>Chi sono</h2>
 					</header>
-					<p>Mi chiamo <b>Maria Carmina Sepe</b>, ho 25 anni, sono un'<b>infermiera</b>. Lavoro presso l'Azienda Ospedaliera Universitaria Federico II
-					   e svolgo assistenza infermieristica domiciliare in orario extra lavorativo. 
+					<p>Mi chiamo <b>Maria Carmina Sepe</b>, ho 25 anni, sono un'<b>infermiera</b>. Lavoro presso l'Azienda Ospedaliera Universitaria Federico II.
 					   Sono una persona aperta e disponibile e mi piace trascorrere il mio tempo libero tra la gente.
-					   Le persone che mi conoscono mi reputano sincera ed affidabile. Mantengo gli impegni presi.	
+					   Le persone che mi conoscono mi reputano sincera ed affidabile. Mantengo gli impegni presi.
 					   Sono nata e cresciuta nella nostra splendida Afragola per la quale provo un amore profondo.
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
 
-			
-			
-			
+
+
+
 			<!-- Two -->
 			<section id="two" class="main style2 right dark fullscreen">
 				<div class="content box style2">
@@ -88,55 +100,48 @@
 						<h2>Politica</h2>
 					</header>
 					<p> Dopo l'ottimo risultato delle scorse elezioni in cui ottenni ben <b>534 preferenze</b>,
-					    anche quest anno ho deciso di candidarmi per il consiglio comunale di Afragola. 					
-					    Vi chiedo di credere ancora in me! Insieme possiamo far risorgere la nostra amata città!					
-					    La mia disponibilità e il mio appoggio in ogni esigenza e problema da risolvere è il punto di partenza 
+					    anche quest anno ho deciso di candidarmi per il consiglio comunale di Afragola.
+					    Vi chiedo di credere ancora in me! Insieme possiamo far risorgere la nostra amata città!
+					    La mia disponibilità e il mio appoggio in ogni esigenza e problema da risolvere è il punto di partenza
 					    per il futuro di Afragola.</p></p>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
-		
-		
 
-		<!-- Work 
-			<section id="work" class="main style3 primary">
-				<div class="content">
+
+			<section id="casa" class="main style3 secondary">
+				<div class="gallery content">
+						<div> <img src='pages/Programma-01.png'> </div>
+						<div> <img src='pages/Programma-02.png'> </div>
+				</div>
+				<script type="text/javascript">
+				console.log("mammt");
+					$(document).ready(function(){
+	  				$('.gallery').slick({
+							arrows: false,
+							slidesToShow: 1,
+							 slidesToScroll: 1,
+							 autoplay: true,
+							 autoplaySpeed: 2000,
+						});
+					});
+				</script>
+			</section>
+
+
+		<!-- News -->
+			<section id="news" class="main style2 right dark fullscreen">
+				<div class="content box style2">
 					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<h2>Avvisi</h2>
 					</header>
-
-					<!-- Gallery  
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
-							</article>
-						</div>
-
+						<p><b>Sabato 19 Maggio 2018 alle ore 19</b> si inaugura il comitato elettorale in <b>p.zza Castello</b> di <b>Maria Carmina SEPE</b> con la presenza
+						del nostro candidato sindaco <b>Claudio Grillo</b>.</p>
 				</div>
 			</section>
-		-->
-		
-		<!-- Contact -->	
-		
 
+
+		<!-- Contact -->
 		<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
@@ -155,8 +160,15 @@
 					</div>
 				</div>
 			</section>
-		
-			
+
+
+
+			<!-- Widget Facebook -->
+			<section class="main style3 secondary">
+				<div class="content" style="width: 137vh;">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSEPE-Maria-Carmina-2018014255184485%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media">
+				</div>
+			</section></iframe></div></section>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -164,22 +176,21 @@
 				<!-- Icons -->
 					<ul class="actions">
 						<li><a href="https://www.facebook.com/SEPE-Maria-Carmina-2018014255184485/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/maria.sepee/?hl=it" class="icon fa-instagram"><span class="label">Instagram</span></a></li>						
+						<li><a href="https://www.instagram.com/maria.sepee/?hl=it" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
 			</footer>
 
-		<!-- Scripts -->		
-		
+		<!-- Scripts -->
 
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
 		</script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<div class = "imgToHidden __web-inspector-hide-shortcut__">	
+			<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+			<div class = "imgToHidden __web-inspector-hide-shortcut__">
 	</body>
 </html>

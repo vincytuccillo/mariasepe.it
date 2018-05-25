@@ -71,8 +71,8 @@
 		background: #ffffff;
 		height: 100%;
 		min-width: 320px;
-		
-		
+
+
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -418,7 +418,6 @@
 			font-weight: normal;
 			text-transform: none !important;
 			color: #e5e6e7;
-			content: '\f1ce';
 			cursor: default;
 			display: block;
 			font-size: 2em;
@@ -1785,6 +1784,7 @@
 			min-height: 65%;
 		}
 
+
 		.main.style1 {
 			-moz-align-items: center;
 			-webkit-align-items: center;
@@ -1795,7 +1795,7 @@
 			-ms-justify-content: center;
 			justify-content: center;
 			text-align: center;
-			padding: 65em 0 15em 0;
+
 		}
 
 			.main.style1 h2 {
@@ -1847,6 +1847,7 @@
 				margin: 0;
 			}
 
+
 			.main.style2.left {
 				-moz-justify-content: -moz-flex-start;
 				-webkit-justify-content: -webkit-flex-start;
@@ -1859,6 +1860,29 @@
 				-webkit-justify-content: -webkit-flex-end;
 				-ms-justify-content: -ms-flex-end;
 				justify-content: flex-end;
+			}
+
+
+			.main.styleJustify > .content {
+				-moz-transition: -moz-transform 1s ease;
+				-webkit-transition: -webkit-transform 1s ease;
+				-ms-transition: -ms-transform 1s ease;
+				transition: transform 1s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+				position: relative;
+				width: 35%;
+
+			}
+
+
+			.main.styleJustify.justify {
+				-moz-justify-content: -moz-flex-end;
+				-webkit-justify-content: -webkit-flex-end;
+				-ms-justify-content: -ms-flex-end;
+				justify-content: flex-start;
 			}
 
 			.main.style2.inactive.left > .content {
@@ -1950,7 +1974,7 @@
 			}
 
 			.main.style1 {
-				padding: 4em 15px 4em 15px;
+				//padding: 4em 15px 4em 15px;
 			}
 
 				.main.style1 h2 {
@@ -2003,8 +2027,8 @@
 		line-height: 5em;
 		margin: 0;
 		overflow: hidden;
-		
-		
+
+
 	}
 
 		#footer a {
@@ -2102,11 +2126,13 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;*/
-		
-	background: url(../../images/background_SEPE_FdI_2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right, bottom right;
+
+		background: url(../../images/background_SEPE_FdI_4.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		margin-left: -10em;
+		padding-bottom: 90%;
 	}
 
 /* One */
@@ -2158,7 +2184,7 @@
 			}
 
 		}
-		
+
 		.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
     visibility: hidden !important;
 }
